@@ -1,0 +1,41 @@
+Welcome to project NLP Nitro!
+
+
+******************************************************
+You can choose to work in groups of up to 3 people. At this stage, you need to outline your project idea and your teammates. You need to submit a file with the following:
+
+Names of the members of the team (each team just needs to submit once):
+Trevor Wexner
+Rebecca Iglesias-Flores
+
+
+***********************************************
+Project idea along with a short description
+Trevor - background in Machine Learning and Python.
+Rebecca - background in NLP tasks and Python.
+
+We'd like to design a project that incorporates both of our backgrounds.
+Although we have a little experience in tasks related to Machine Learning and NLP, we'd
+like to delve into an idea that we have not yet tackled but still utilizes our backgrounds.
+
+Idea #1:	Parsing text from x-database and transform the overall positive score, semantic score, or complexity of the text.
+			Tools used: Standford-Core-NLP, Java, Semantic Orientation Calculator (So-Cal), Github
+
+Idea #2:	Write your idea here
+
+Idea #3:	Write your idea here
+
+
+https://www.kaggle.com/c/quora-insincere-questions-classification
+
+
+https://www.kaggle.com/c/two-sigma-financial-news
+
+
+
+******************************************
+A short work breakdown – who will do what?
+
+Becca - work on algorithm that takes in message by bulk and transforms them using GitHub So-Cal open source platform tool.
+
+Trevor - <write here what you think your contributions will be...>
