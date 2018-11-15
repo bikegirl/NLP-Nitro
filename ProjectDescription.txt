@@ -18,18 +18,16 @@ We'd like to design a project that incorporates both of our backgrounds.
 Although we have a little experience in tasks related to Machine Learning and NLP, we'd
 like to delve into an idea that we have not yet tackled but still utilizes our backgrounds.
 
-Idea #1:	Parsing text from x-database and transform the overall positive score, semantic score, or complexity of the text.
-			Tools used: Standford-Core-NLP, Java, Semantic Orientation Calculator (So-Cal), Github
-
-Idea #2: Create a program that, given a sequence of words, returns a sequence with the same meaning, but more sophisticated synonyms substituted for the original text. A common problem when writing (especially students writing essays) is looking for more sophisticated synonyms to a given word. This program will have a GUI that allows the user to load in a text file, then returns a new file with each word substituted for the synonym with the highest level of complexity. 
+Create a program that, given a sequence of words, returns a sequence with the same meaning, but more sophisticated synonyms substituted for the original text. A common problem when writing (especially students writing essays) is looking for more sophisticated synonyms to a given word. This program will have a GUI that allows the user to load in a text file, then returns a new file with each word substituted for the synonym with the highest level of complexity. 
 
 — Implementation:
-If a database containing word complexities exists, the program would first look at a table of synonyms to each word, then pick the word of those synonyms with maximum complexity. If no such database of word complexities is available, the program will return the synonym of the longest length (that is also the same part of speech). This part will probably omit some stop words such as prepositions, “is”, etc for the sake of continuity of speech.
+If a database containing word complexities exists, the program would first look at a table of synonyms to each word, then pick the word of those synonyms with maximum complexity. Here we will just measure complexity by length of the word.
 
 - Possible add on ideas
 	- Produce a user interface that also allows for the user to type in a sequence of text, rather than load in a file. Then return the new sequence in the output
 	- Allow the user to adjust the “complexity” of the returned text on a scale of 1-5. The returned text would then have the average complexity returned according to that scale. Often it sounds absurd if every word used is overly sophisticated. Some happy medium of sophisticated enough but not overly so could be good —> we could also just build this into our algorithm
 	- Also add on a feature that changes the tone of the text to happier
+	- Train a more sophisticated model for complexity, using SVM and academic data
 
 - Possible data sources for synonyms:
 	- https://wordnet.princeton.edu/
@@ -52,14 +50,7 @@ Tasks to be completed
 
 ******************************************
 A short work breakdown – who will do what?
-Idea 1:
 
-Becca - work on algorithm that takes in message by bulk and transforms them using GitHub So-Cal open source platform tool.
-
-Trevor - Write code to query API or scrape synonyms from online database 
-
-Idea 2:
-
-Becca - (1)
-Trevor - (2),(3)
+Becca - (1)(2)
+Trevor - (3)
 Split 4-7 pretty evenly
