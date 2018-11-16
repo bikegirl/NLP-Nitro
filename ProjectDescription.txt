@@ -1,4 +1,4 @@
-Welcome to project NLP Nitro!
+﻿Welcome to project NLP Nitro!
 
 
 ******************************************************
@@ -33,10 +33,21 @@ If a database containing word complexities exists, the program would first look 
 	- https://wordnet.princeton.edu/
 	- https://www.wordsapi.com/
 	- Scrape code from thesaurus.com
+	-google n-gram corpus for frequency (related to complexity)
 
-- Possible sources for parts of speech:
+- Possible sources for parts of speech (parsers):
 	- Stanford Core NLP if Java used
 	- NLTK if Java used
+	- spaCy if
+
+- Possible sources for databases and dictionaries:
+ 	- simple PPDB
+	- PPDB
+
+- Possible re-implementation of these NLP papers in the opposite direction
+	- Cite:
+	- http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf
+	- https://mail.google.com/mail/u/1/#inbox/QgrcJHsBnjjclnZBtRVBWHVpGMhkRDxqMml?projector=1&messagePartId=0.1	
 
 
 Tasks to be completed
