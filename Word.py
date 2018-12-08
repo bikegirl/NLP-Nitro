@@ -28,11 +28,8 @@ class Word:
 
     def compute_complexity_score(self):
         """
-        For now, word complexity is just 1/frequency
-        % MAYBE ADD MODEL AND OR LENGTH LATER
+        Word complexity = exp(-frequency)
         """
-        # return len(self.__word)
-        
         return math.exp(-self.__frequency)
 
 

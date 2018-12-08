@@ -7,6 +7,8 @@ import unittest
 from DataMuseQuerier import DataMuseQuerier
 from Word import Word
 from WordSubstitutor import WordSubstitutor
+from SpaCyParser import SpaCyParser
+from TextComplexifier import TextComplexifier
 
 class TestMethods(unittest.TestCase):
     
@@ -149,12 +151,93 @@ class TestMethods(unittest.TestCase):
         """
         word_substitutor = WordSubstitutor()
         result = word_substitutor.get_best_synonym(Word("dog", "n")).get_word()
-        self.assertEqual(result, "canis familiaris")
+        self.assertEqual(result, "hound")
         
 
-        # 4 or 5 methods for SpaCy parser and 4 or 5 for TextComplexifier
+    def test_spacy_parser_on_empty_string(self):
+        """
+        Make sure SpaCy Parser still runs on an emptry string
+        an empty list
+        """
+        parser = SpaCyParser()
+        result = parser.parse_and_tag_text("")
+        self.assertEqual(result, [])
         
     
+    def test_spacy_parser_on_punctuation(self):
+        """
+        Make sure SpaCyParser still runs on punctuation
+        And returns puncuation (.) as the tag
+        """
+        parser = SpaCyParser()
+        result = parser.parse_and_tag_text("?")
+        self.assertEqual(result, [('?', '.')])
+    
+    def test_spacy_parser_on_known_sentence(self):
+        """
+        Make sure SpaCyParser runs as expected on
+        a sentence of known tags
+        """
+        parser = SpaCyParser()
+        result = parser.parse_and_tag_text("I like to eat lots of food")
+        expected_result = [('I', 'PRP'), ('like', 'v'), ('to', 'TO'), \
+                           ('eat', 'v'), ('lots', 'NNS'), ('of', 'IN'), \
+                           ('food', 'n')]
+        self.assertEqual(result, expected_result)
+    
+    def test_spacy_parser_on_mixed_text_and_punctuation(self):
+        parser = SpaCyParser()
+        result = parser.parse_and_tag_text("I, however, feel differently.")
+        expected_result = [('I', 'PRP'), (',', ','), ('however', 'adv'), \
+                           (',', ','), ('feel', 'v'), ('differently', 'adv'),\
+                           ('.', '.')]
+        self.assertEqual(result, expected_result)
+        
+    
+    def test_text_complexifier_on_empty_text(self):
+        """
+        Make sure that the TextComplexifier class doesn't fail on empty strings,
+        But returns an empty string
+        """
+        tc = TextComplexifier()
+        self.assertEqual(tc.complexify_text(""), "")
+    
+    def test_text_complexifier_on_text_with_punctuation(self):
+        """
+        Make sure that TextComplexifier retains punctuation and
+        Returns the expected output
+        """
+        tc = TextComplexifier()
+        result = tc.complexify_text("I, however, like to think of myself as a gentleman.")
+        expected_result = "I, notwithstanding, like to reckon of myself as a gent."
+        self.assertEqual(result, expected_result)
+    
+    def test_text_complexifier_on_punctuation_only(self):
+        """
+        If only punctuation is passed, make sure only that punctuation is returned
+        by TextComplexifier
+        """
+        tc = TextComplexifier()
+        self.assertEqual(tc.complexify_text(","), ",")
+         
+    def test_text_complexifier_on_whitespace(self):
+        """
+        Make sure that TextComplexifier preserves whitespace if only 
+        whitespace is passed
+        """
+        tc = TextComplexifier()
+        self.assertEqual(tc.complexify_text(" "), " ")
+    
+    def test_text_complexifier_on_fake_word(self):
+        """
+        Make sure the TextComplexifier still runs with a fake word
+        And returns that word
+        """
+        tc = TextComplexifier()
+        self.assertEqual(tc.complexify_text("asdkj"), "asdkj")
+        
+if __name__ == '__main__':
+    unittest.main()
 
         
         

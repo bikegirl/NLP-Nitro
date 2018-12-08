@@ -22,7 +22,15 @@ class WordSubstitutor:
         """ Takes in a Word obejct, looks at the top 5 synonyms according to DataMuse API,
             then returns the word witht the most complex synonym. 
             If the most complex word is the original,
-            that word returnsed
+            that word returned
+        
+        Args:
+            word: Word object whose synonyms the user wants to find
+            left_context: optionally specified string as left context
+            right_context: optionally specified string as right context
+        
+        Returns:
+            Word object of most complex synonym
         """
         # Only look to substitute adj, adv, verbs, and non-pronoun nouns
         if word.get_part_of_speech() not in ['adj', 'adv', 'v', 'n']:

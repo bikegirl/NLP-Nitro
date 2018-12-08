@@ -14,8 +14,16 @@ class DataMuseQuerier:
         self.__api_url = "https://api.datamuse.com/words?"
     
     def get_synonym_query_results(self, word, left_context = "", right_context = ""):
-        """
-        Takes in an object of the class Word and returns the top 5 synonyms
+        """Takes in an object of the class Word and returns the top 5 synonyms
+           Optionally can specify left and right context (as strings)
+          
+        Args:
+            word: Word object whose synonyms the user wants to find
+            left_context: optionally specified string as left context
+            right_context: optionally specified string as right context
+        
+        Returns:
+            API query results as a list
         """
         if (len(left_context) == 0) and (len(right_context) == 0):
             response = requests.get(self.__api_url + 'ml=' + word.get_word() + '&md=f&max=5')
@@ -42,8 +50,14 @@ class DataMuseQuerier:
             
     
     def get_frequency(self, word):
-        """
-        Returns the frequency of one individual word
+        """ Queries the API and returns the frequency of one individual word
+        
+        Args:
+            word: Word object whose freqeuncy we want to find
+        
+        Returns:
+            frequency: float - the word's frequency in Google NGrams
+        
         """
         response = requests.get(self.__api_url + 'sp=' + word.get_word() + '&md=f&max=1')
         parsed_json = json.loads(response.content.decode('utf-8'))
