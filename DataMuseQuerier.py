@@ -47,7 +47,18 @@ class DataMuseQuerier:
         """
         response = requests.get(self.__api_url + 'sp=' + word.get_word() + '&md=f&max=1')
         parsed_json = json.loads(response.content.decode('utf-8'))
-        return float(parsed_json[0]['tags'][0].split(":")[1])
+        
+        # Make sure that there is something returned
+        if len(parsed_json) > 0:
+            return float(parsed_json[0]['tags'][0].split(":")[1])
+        
+        # if the word is a nonempty string and nothing is returned, consider it rare because it wasn't found
+        elif len(word.get_word()) > 0:
+            return 0 
+        
+        # return "infinite frequency" to never use this word an empty String is passed
+        else:
+            return float('inf') 
     
     
         

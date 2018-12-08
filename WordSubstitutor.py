@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-WordSubstitutor class takes in a word
-splits the words based on whitespace and all punctuation except "'". 
+WordSubstitutor class takes in a Word
 Provides a method to return the sentence with words of appropriate higher complexity
-Substituted
+Substituted. Only substitutes for verbs, non-comparator adjecticves, adverbs, and
+non-pronoun nouns
 """
 from Word import Word
 from DataMuseQuerier import DataMuseQuerier
@@ -14,7 +14,7 @@ class WordSubstitutor:
     
     # constructor
     def __init__(self):
-        self.__synonym_querier = DataMuseQuerier()
+        self.__synonym_querier = DataMuseQuerier() 
     
     # substitute words
     # ADD IN AN ARGUMENT FOR CHECKING STOP WORDS LATER
@@ -24,14 +24,16 @@ class WordSubstitutor:
             If the most complex word is the original,
             that word returnsed
         """
-        # Only looks for synonyms if word is not an article, conjunction, or pronoun
-        # Maybe change to add stop list later
-        if word.get_part_of_speech() in ['art', 'conj', 'pron', 'prep']:
+        # Only look to substitute adj, adv, verbs, and non-pronoun nouns
+        if word.get_part_of_speech() not in ['adj', 'adv', 'v', 'n']:
             return word
         
         else:
             # Query results from API = synonym list, with part of speech tags
             synonym_list = self.__synonym_querier.get_synonym_query_results(word, left_context, right_context)
+            
+            # find and set our word's frequency
+            word.set_frequency(self.__synonym_querier.get_frequency(word))
             
             best_synonym = Word("", "")
             max_synonym_score = 0
@@ -43,6 +45,9 @@ class WordSubstitutor:
                     # only consider word if "score" > 20000
                     score = syn['score']
                     if score < 20000:
+                        pass
+                    # only consider word if it is one word, not a multi-word phrase
+                    elif len(syn['word'].split(' ')) > 1:
                         pass
                     else:
                         freq = float(syn['tags'][len(syn['tags']) - 1].split(':')[1])

@@ -32,6 +32,7 @@ class TestMethods(unittest.TestCase):
         """
         querier = DataMuseQuerier()
         self.assertEqual(querier.get_synonym_query_results(Word("","")), [])
+        
     
     def test_left_context_only_query(self):
         """
@@ -151,6 +152,7 @@ class TestMethods(unittest.TestCase):
         self.assertEqual(result, "canis familiaris")
         
 
+        # 4 or 5 methods for SpaCy parser and 4 or 5 for TextComplexifier
         
     
 
