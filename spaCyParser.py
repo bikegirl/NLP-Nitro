@@ -42,7 +42,7 @@ class SpaCyParser:
         for item in self.__tags:
             if item[1] in ('JJ', 'JJS'):
                 api_tags.append((item[0], 'adj'))
-            elif item[1] in ('NN', 'NNS'):
+            elif item[1] in ('NN'):
                 api_tags.append((item[0], 'n'))
             elif item[1] in ('RB', 'RBR', 'RBS', 'ADV'):
                 api_tags.append((item[0], 'adv'))
