@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-TextComplexifier is the main class.
+TextComplexifier is the main class prior to interacting with a GUI.
 Provides a method to take in a String (sequence of text)
 and returns a new piece of text with the same meaning and 
 nouns, verbs, adjectives, and adverbs substituted for more complicated
@@ -23,9 +23,15 @@ class TextComplexifier:
         self.__word_substitutor = WordSubstitutor()
         
     def __vec_to_string(self, text_vector):
-        """
-        (Private) helper method to convert a vector of strings and punctuation
+        """(Private) helper method to convert a vector of strings and punctuation
         to one single string
+        
+        Args:
+            text_vector: vector (or list) of strings to be concatenated
+            
+        Returns:
+            One string with the contents of the original vector concatenated
+            spaces are added before each input string with an alphanumeric character
         """
         
         # if the text vector is blank, return a blank string
