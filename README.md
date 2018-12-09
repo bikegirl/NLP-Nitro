@@ -29,8 +29,11 @@ Our project would not be possible without the contributions of NAACL paper [Simp
 > For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
 
 ##NLP Nitro Project
-###Main 
+
+###Main
+
 Client Program calls complexifier GUI interface for the user.
 
 ###ComplexifierGUI Class
+
 Serves as a graphical user interface between the User and implementation details of the program.  The class has 2 instance variables: the actual (__application_window) that displays the actual title of the text box
