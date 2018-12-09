@@ -42,6 +42,8 @@ Feel free to scroll to view whole diagram or download by maximizing window
     <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
 </div>
 
+[embed]https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf[/embed]
+
 ### Main
 
 Client Program calls complexifier GUI interface for the user.
