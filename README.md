@@ -44,9 +44,9 @@ Client Program calls complexifier GUI interface for the user.
 
 ### ComplexifierGUI Class
 
-Serves as a graphical user interface between the User and implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.
+Serves as a graphical user interface between the User and implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.  For all intents and purposes you can think of ComplexifierGUI Class as the main as well, (helper function to main), as main is called through the GUI or via GUI.
 
-Methods include __complexify_and_display_text and run_complexifier_GUI.  __complexify_and_display_text will display the output vector un by run_complexifier_GUI.
+Methods include __complexify_and_display_text and run_complexifier_GUI.  __complexify_and_display_text will display the output vector un by run_complexifier_GUI and run_complexifier GUI will return the output vector after processing to be displayed to the GUI.
 
 
 
