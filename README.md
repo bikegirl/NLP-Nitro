@@ -3,7 +3,7 @@ CIT 591 End of the Year Project
 
 ## Introduction
 
-Our project would not be possible without the contributions of NAACL paper [Simple PPDB contextual simplification] (http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf).  As an extension to prior work completed by [Reno Kris](https://rekriz11.github.io/), NLP Nitro aims to implement this research paper backwards and transform any content message into a higher complexity score ("Shakespearify" any text, if you will).
+Our project would not be possible without the contributions of NAACL paper [Simple PPDB Contextual Simplification](http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf).  As an extension to prior work completed by [Reno Kris](https://rekriz11.github.io/), NLP Nitro aims to implement this research paper backwards and transform any content message into a higher complexity score ("Shakespearify" any text, if you will).
 
 ## Depedencies
 
