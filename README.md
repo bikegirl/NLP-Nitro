@@ -26,4 +26,4 @@ Our project would not be possible without the contributions of NAACL paper [Simp
    - `nlp = spacy.load('en_core_web_sm')`//this is the english mini-model 
 
 ### More Help
-> For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for more common issues.
+> For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
