@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SpaCy Parser; Add comments later
+SpaCy Parser loads in an english model to parse text into categories of interest in Natural Language Processing.
+The parts of the model used in SpaCy Parser is the tokenization model and the part of speech tagging.
+SpaCy Parser first tokenizes/tags a sentence and then converts the universal standarized POS tags to equivalent tags used in API.
 
 To install: pip install -U spacy && python -m spacy download en
 """
@@ -55,5 +57,5 @@ class SpaCyParser:
         self.__tags = []
         self.__tokens= []
        
-        # Return API tags
+        # Return API tags (a list)
         return api_tags
