@@ -1,5 +1,5 @@
 # CIT591-NLP-Nitro
-## CIT 591 End of the Year Project - making your world more complex one token at a time...
+Making your world more complex one token at a time...
 
 ### Introduction
 
