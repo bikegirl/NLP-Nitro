@@ -34,7 +34,13 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 ### UML Diagram - a brief overview
 
+Feel free to scroll to view whole diagram or download by maximizing window
+
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
+
+<div>
+    <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
+</div>
 
 ### Main
 
