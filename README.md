@@ -32,6 +32,10 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 ## NLP Nitro Project
 
+### UML Diagram - a brief overview
+
+![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
+
 ### Main
 
 Client Program calls complexifier GUI interface for the user.
