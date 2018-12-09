@@ -24,3 +24,6 @@ Our project would not be possible without the contributions of NAACL paper [Simp
 4. Cannot fine module en or couldn't link model.  You must use a seperate command to download the English model, try these two version b/c it depends on an individual basis how you set up your environment and where the pathway to your python download is located:
    - `nlp = spacy.load('en')`//this is the full english model
    - `nlp = spacy.load('en_core_web_sm')`//this is the english mini-model 
+
+### More Help
+> For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for more common issues.
