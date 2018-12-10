@@ -5,7 +5,8 @@ import requests
 
 """
 DataMuseQuerier Class queries the datamuse API for the synonyms of a given word
-Returns top 5 results
+Returns top 5 results. Also provides a method to query and return frequency 
+for a given word.
 """
 
 class DataMuseQuerier:

@@ -2,17 +2,14 @@
 # -*- coding: utf-8 -*-
 """
 Word class holds the properties of a word:
-    part_of_speech, and has a method for computing
+    token, part_of_speech, and frequency.
+    Has a method for computing complexity
 """
 import math
 
 class Word:
     
     def __init__(self, word, part_of_speech, frequency = 0):
-        """
-        Constructor:
-            Populate word object with word, POS, and frequency
-        """
         self.__word = word
         self.__part_of_speech = part_of_speech
         self.__frequency = frequency
@@ -31,16 +28,11 @@ class Word:
         return self.__frequency
 
     def compute_complexity_score(self):
-        """
-        Args:
-            word object: a word object contains the token, pos tag, and frequency
-
-        Returns:
-            A float representing word complexity.  For now, word complexity is just 1/frequency.
-            % MAYBE ADD MODEL AND OR LENGTH LATER
-        """
-        # return len(self.__word)
+        """ Word complexity = exp(-frequency)
         
+        Return:
+            complexity(float)
+        """
         return math.exp(-self.__frequency)
 
 

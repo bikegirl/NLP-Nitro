@@ -5,6 +5,7 @@ SpaCy Parser loads in an english model to parse text into categories of interest
 The parts of the model used in SpaCy Parser is the tokenization model and the part of speech tagging.
 SpaCy Parser first tokenizes/tags a sentence and then converts the universal standarized POS tags to equivalent tags used in API.
 
+
 To install: pip install -U spacy && python -m spacy download en
 """
 import spacy
@@ -57,5 +58,5 @@ class SpaCyParser:
         self.__tags = []
         self.__tokens= []
        
-        # Return API tags (a list)
+        # Return API tags
         return api_tags

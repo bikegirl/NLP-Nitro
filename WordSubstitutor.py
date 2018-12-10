@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 WordSubstitutor class takes in a Word
-Provides a method to return the sentence with words of appropriate higher complexity
-Substituted. Only substitutes for verbs, non-comparator adjecticves, adverbs, and
-non-pronoun nouns
+Provides a method to return a word of similar meaning and higher complexity
+substituted. Only substitutes for verbs, non-comparator adjectives, adverbs, and
+non-pronoun nouns are considered.
 """
 from Word import Word
 from DataMuseQuerier import DataMuseQuerier
