@@ -39,7 +39,7 @@ Feel free to scroll to view whole diagram or download PDF by maximizing window [
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
 
 ### Main
-[quick access Main.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/main.py)q
+[quick access Main.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/main.py)
 
 This is not the main method.  File is called Main.py. Main helper class to ComplexifierGUI Class has a ComplexiferGUI Object to call and run GUI method.  Calls and runs test, then calls and runs the GUI 
 
