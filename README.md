@@ -1,4 +1,4 @@
-# CIT591-NLP-Nitro <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="30" hieght="30">
+# CIT591-NLP-Nitro <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="40" hieght="40">
 Making your world more complex one token at a time...
 
 ### Introduction
