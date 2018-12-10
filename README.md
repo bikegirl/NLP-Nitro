@@ -59,7 +59,7 @@ Our package involves several classes, whose relationship and summary can be foun
 
 ### UML Diagram 
 
-Feel free to scroll to view whole diagram or download PDF by maximizing window [clicking here.](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/project%20planning/NLP-Nitro-UML.pdf)
+Feel free to scroll to view whole diagram or download PDF by [clicking here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/project%20planning/NLP-Nitro-UML.pdf)
 
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/NLP-Nitro.png)
 
