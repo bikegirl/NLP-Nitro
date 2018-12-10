@@ -113,3 +113,14 @@ Word class holds the properties of an English word. Specifically, for each word,
 This class provides unit tests for all classes in the NLP_Nitro package, with the exception of ComplexifierGUI and main. 25 total unit tests are provided, roughly 5 per class. Tests largely ensure that blank strings, non-words, and punctuation don't cause errors. They also check that various functions return output as expected. 
 
 *To run these unit tests, simply run the file*
+
+## Team
+
+[![Rebecca Iglesias-Flores](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/bikegirl)  | [![Trevor Wexner](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/wexnert)
+---|---
+[Rebecca Iglesias-Flores](https://github.com/bikegirl) |[Trevor Wexner](https://www.quandl.com)
+
+## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
+
+UPenn © [Rebecca Iglesias-Flores](https://github.com/bikegirl)
+UPenn © [Trevor Wexner](https://github.com/wexnert)
