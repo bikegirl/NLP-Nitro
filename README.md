@@ -40,6 +40,8 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 Feel free to scroll to view whole diagram or download PDF by maximizing window [here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
 
+https://docs.google.com/viewer?url=${https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf}
+
 <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf" width="600" height="1000" />
 
 <div>
