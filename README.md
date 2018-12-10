@@ -119,7 +119,8 @@ This class provides unit tests for all classes in the NLP_Nitro package, with th
 ---|---
 [Rebecca Iglesias-Flores](https://github.com/bikegirl) |[Trevor Wexner](https://github.com/wexnert)
 
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
+## [License](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/LICENSE)
 
-UPenn © [Rebecca Iglesias-Flores](https://github.com/bikegirl)
-UPenn © [Trevor Wexner](https://github.com/wexnert)
+MIT © [Rebecca Iglesias-Flores](https://github.com/bikegirl)
+
+MIT © [Trevor Wexner](https://github.com/wexnert)
