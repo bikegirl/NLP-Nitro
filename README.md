@@ -1,7 +1,11 @@
-# CIT591-NLP-Nitro ![UPenn](https://secure.www.upenn.edu/webservices/logos/2016/shield-only-RGB-4k.png "Coat of Arms")
+# CIT591-NLP-Nitro <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="40" hieght="40">
 Making your world more complex one token at a time...
 
 ### Introduction
+
+Our package, NLP_Nitro, provides software to automatically "complexify" any provided text. Specifically, this package includes a GUI that allows the user to type in any arbitrary English text. The GUI will then return a complexified version of the text, where all non-comparator adjectives, singular non-pronoun nouns, adverbs, and verbs are replaced by synonyms of similar meaning and higher complexity.
+
+This problem of substituting simpler words for more complex synonyms was motivated because it is a common problem with practical applications for anyone wishing to write a non-redundant and professional expsosition.
 
 Our project would not be possible without the contributions of NAACL paper [Simple PPDB Contextual Simplification](http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf).  As an extension to prior work completed by [Reno Kris](https://rekriz11.github.io/), NLP Nitro aims to implement this research paper backwards and transform any content message into a higher complexity score ("Shakespearify" any text, if you will).  
 
@@ -35,6 +39,14 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 ### UML Diagram - a brief overview
 
 Feel free to scroll to view whole diagram or download PDF by maximizing window [here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
+
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf" width="600" height="1000" />
+
+<div>
+    <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
+</div>
+
+![Model View Controller](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
 
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
 
