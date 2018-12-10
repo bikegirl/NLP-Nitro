@@ -40,23 +40,23 @@ Feel free to scroll to view whole diagram or download PDF by maximizing window [
 
 ### Main
 
-This is not the main method.  File is called Main.py. ComplexifierGUI helper function the has a ComplexiferGUI object to call run GUI method.
+This is not the main method.  File is called Main.py. ComplexifierGUI helper class that has a ComplexiferGUI object to call run GUI method.
 
 ### ComplexifierGUI Class
 
-Serves as a graphical user interface between the User in order to hide implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.  For all intents and purposes you can think of ComplexifierGUI Class as codependent with main, (helper function of main), as main is called through the GUI or via GUI.
+Serves as a graphical user interface between the User in order to hide implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.  For all intents and purposes you can think of ComplexifierGUI Class as codependent with main.py, (helper class of TextComplexifier class, which is the actual main method for this project), as main.py is called through the GUI or via GUI.
 
-Methods include __complexify_and_display_text and run_complexifier_GUI.  
--__complexify_and_display_text will display the output vector un by run_complexifier_GUI 
-- run_complexifier GUI will return the output vector after processing to be displayed to the GUI.
+Methods include __complexify_and_display_text() and run_complexifier_GUI().  
+-__complexify_and_display_text() will display the output vector by run_complexifier_GUI 
+- run_complexifier_GUI() will return the output vector after processing to be displayed to the GUI.
 
 ### TextComplexifier Class
 
 This is the main method by all conventional standards.  At a high-fully encapsulated level TextComplexifier provides a method to take in a String (sequence of text) and returning a new piece of text, it depends directly upon the SpacyParser and WordSubstitutor Class for all the brains behind the work.  Carefully selected parts of speech (nouns, verbs, adjectives, and adverbs) are substituted for more complicated synonyms based off a complexity score while preserving the meaning of the overall message.
 
-TextComplexifier Class takes in a SpaCyParser Object and a WordSubstitutor Object in order to access methods needed to complexify text.  TextComplexifier has two methods: __vec_to_string and complexify_text.
-- __vec_to_string helper method to convert a vector of strings and punctuation to one single string
-- complexify_text a method that takes in a text and returns a string with a higher complexity score while preserving the meaning.
+TextComplexifier Class takes in a SpaCyParser Object and a WordSubstitutor Object in order to access methods needed to complexify text.  TextComplexifier has two methods: __vec_to_string() and complexify_text().
+- __vec_to_string() is a helper method to convert a vector of strings and punctuation to one single string
+- complexify_text() a method that takes in a text and returns a string with a higher complexity score while preserving the meaning.
 
 ### SpaCyParser
 
@@ -68,9 +68,20 @@ SpacyParser has one magical method called parse_and_tag_text() that receives a t
 
 ### WordSubstitutor
 
-WordSubstitutor Class works hand in hand with SpaCyParser class to give TextComplexifier class the best possible synonym selections of a higher complexity score to work with.  WordSubstitutor takes in a Word, provides a method to return the sentence with words of appropriate higher complexity.  It receives a DataMuseQuierer Object as an instance variable and only substitutes for verbs, non-comparator adjecticves, adverbs, and non-pronoun nouns.
+WordSubstitutor Class works hand-in-hand with SpaCyParser class to give TextComplexifier class the best possible synonym selections of a higher complexity score to work with.  WordSubstitutor takes in a Word, provides a method to return the sentence with words of appropriate higher complexity.  It receives a DataMuseQuierer Object as an instance variable and only substitutes for verbs, non-comparator adjecticves, adverbs, and non-pronoun nouns.
 
-WordSubstitutor has one method get_best_synonym Takes in a Word object, looks at the top 5 synonyms according to DataMuse API, 0then returns the word with the most complex synonym. If the most complex word is the original, that word is returned.  If not, the higher complexity scored word is returned.
+WordSubstitutor has one method get_best_synonym() that takes in a Word object, looks at the top 5 synonyms according to DataMuse API, and finally returns the word with the most complex synonym. If the most complex word is the original, that word is returned.  If not, the higher-complexity-scored word is returned.
+
+### DataMuse Quierier
+
+If you haven't felt the *magic* after SpaCyParser and WordSubstitutor, then you will definietly feel the magic now with DataMuse.  As afore mentioned, previous research has used nltk parser and PPDB to generate acceptable paraphrases for lexical substitution and is widely used in NLP.  For this project, we decided to apply the principles of PPDB to an API where we search for better paraphrases synonyms in the API for our pool of wonderful lexical substitution worth tokens.  DataMuses's one instance variable is the actual API url and then returns the top 5 results with the highest complexity score ripe for the picking.
+
+DataMuse Quierier has two methods: get_synonym_query_results() and get_frequency().
+- get_synonym_query_results() takes in an object of the class Word and return a list of the top 5 synonyms
+- get_frequency() returns a float (representing infinite frequency so value is always between 0-1) of one word.
+ 
+
+
 
 
 
