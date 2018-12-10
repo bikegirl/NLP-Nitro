@@ -1,4 +1,4 @@
-# CIT591-NLP-Nitro <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="40" hieght="40">
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="50" hieght="50"> # CIT591-NLP-Nitro 
 Making your world more complex one token at a time...
 
 ### Introduction
@@ -111,11 +111,3 @@ Word class holds the properties of an English word. Specifically, for each word,
 This class provides unit tests for all classes in the NLP_Nitro package, with the exception of ComplexifierGUI and main. 25 total unit tests are provided, roughly 5 per class. Tests largely ensure that blank strings, non-words, and punctuation don't cause errors. They also check that various functions return output as expected. 
 
 *To run these unit tests, simply run the file*
- 
-
-
-
-
-
-
-
