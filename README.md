@@ -1,4 +1,4 @@
-<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="icon.png" align="right" /> 
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/icon.png" align="right" /> 
 
 # CIT591-NLP-Nitro
 Making your world more complex one token at a time...
@@ -61,7 +61,7 @@ Our package involves several classes, whose relationship and summary can be foun
 
 Feel free to scroll to view whole diagram or download PDF by maximizing window [here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
 
-![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
+![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/NLP-Nitro.png)
 
 ### main
 [quick access main.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/main.py)
