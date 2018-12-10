@@ -68,17 +68,22 @@ SpacyParser has one magical method called parse_and_tag_text() that receives a t
 
 ### WordSubstitutor
 
-WordSubstitutor Class works hand-in-hand with SpaCyParser class to give TextComplexifier class the best possible synonym selections of a higher complexity score to work with.  WordSubstitutor takes in a Word, provides a method to return the sentence with words of appropriate higher complexity.  It receives a DataMuseQuierer Object as an instance variable and only substitutes for verbs, non-comparator adjecticves, adverbs, and non-pronoun nouns.
+WordSubstitutor Class works hand-in-hand with SpaCyParser class to give TextComplexifier class the best possible synonym selections of a higher complexity score to work with.  WordSubstitutor takes in a Word Object, provides a method to return the sentence with words of appropriate higher complexity for that Word Object.  It receives a DataMuseQuierer Object as an instance variable and only substitutes for verbs, non-comparator adjecticves, adverbs, and non-pronoun nouns.
 
-WordSubstitutor has one method get_best_synonym() that takes in a Word object, looks at the top 5 synonyms according to DataMuse API, and finally returns the word with the most complex synonym. If the most complex word is the original, that word is returned.  If not, the higher-complexity-scored word is returned.
+WordSubstitutor has one method get_best_synonym() that takes in a Word object, looks at the top 5 synonyms according to DataMuse API, and finally returns the word with the most complex synonym. If the most complex word is the original, that word is returned.  If not, the higher-complexity-scored word is returned.  One of the other most important fucntionalities of WordSubstitutor is that it sets the frequency score for a Word Object.
 
-### DataMuse Quierier
+### DataMuseQuierier
 
 If you haven't felt the *magic* after SpaCyParser and WordSubstitutor, then you will definietly feel the magic now with DataMuse.  As afore mentioned, previous research has used nltk parser and PPDB to generate acceptable paraphrases for lexical substitution and is widely used in NLP.  For this project, we decided to apply the principles of PPDB to an API where we search for better paraphrases synonyms in the API for our pool of wonderful lexical substitution worth tokens.  DataMuses's one instance variable is the actual API url and then returns the top 5 results with the highest complexity score ripe for the picking.
 
 DataMuse Quierier has two methods: get_synonym_query_results() and get_frequency().
 - get_synonym_query_results() takes in an object of the class Word and return a list of the top 5 synonyms
 - get_frequency() returns a float (representing infinite frequency so value is always between 0-1) of one word.
+
+### Word
+
+Word Class keeps track of all the properties of a word in a neatly bundled word object.  For each word, it will keep track of the actual token (String), its POS, and it's frequency score calculated under the WordSubstitutor Class.  Aside from its getters and setters, the only method for Word Class is compute complexity score called compute_complexity_score() (which frequency of a word is one of the criteria we use to compute the complexity score).  
+- compute_complexity_score() returns the infinite frequency value of the word.
  
 
 
