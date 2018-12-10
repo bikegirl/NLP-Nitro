@@ -47,10 +47,10 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 ### Complexification Algorithm
 Our complexification algorithm is based largely off of the frequency with which a given word shows up in the Google NGram Book Corpus. Specifically, a word's complexity is definined to be *e^(-frequency)*. It is a well known fact in English that a word's complexity is inversely related to it's frequency. We chose to use the negative exponential, rather than *1/(frequency)*, since the negative exponential can handle zero frequencies. Given this complexity measure, our program complexifies text as follows:
 
-(1) Given some text passed by the user, parse the text into individual tokens and add a part of speech tag. (For our purposes, tokens were just single words and seperating punctuation. Multi-word tokens were not considered for simplicity.) 
-(2) For each token, if the token is a non-comparator adjective, adverb, singular non-pronoun noun, or verb, query the DataMuse API and return the 5 most similar synonyms (according to the DataMuse similarity score)
-(3) Find the synonym that has the highest complexity score that is the same part of speech and meets a minimum similarity score to the original word. If this synonym's complexity exceeds the original word's complexity, substitute the synonym.
-(4) Return the resulting set of text once all tokens have been considered for substitution.
+1. Given some text passed by the user, parse the text into individual tokens and add a part of speech tag. (For our purposes, tokens were just single words and seperating punctuation. Multi-word tokens were not considered for simplicity.) 
+2. For each token, if the token is a non-comparator adjective, adverb, singular non-pronoun noun, or verb, query the DataMuse API and return the 5 most similar synonyms (according to the DataMuse similarity score)
+3. Find the synonym that has the highest complexity score that is the same part of speech and meets a minimum similarity score to the original word. If this synonym's complexity exceeds the original word's complexity, substitute the synonym.
+4. Return the resulting set of text once all tokens have been considered for substitution.
 
 ## Design
 Our package involves several classes, whose relationship and summary can be found in the UML diagram below. Further details also follow.
