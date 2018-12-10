@@ -1,4 +1,4 @@
-<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="icon.png" align="right" /> 
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/icon.png" align="right" /> 
 
 # CIT591-NLP-Nitro
 Making your world more complex one token at a time...
@@ -59,9 +59,9 @@ Our package involves several classes, whose relationship and summary can be foun
 
 ### UML Diagram 
 
-Feel free to scroll to view whole diagram or download PDF by maximizing window [here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
+Feel free to scroll to view whole diagram or download PDF by [clicking here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/project%20planning/NLP-Nitro-UML.pdf)
 
-![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
+![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/NLP-Nitro.png)
 
 ### main
 [quick access main.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/main.py)
@@ -113,3 +113,14 @@ Word class holds the properties of an English word. Specifically, for each word,
 This class provides unit tests for all classes in the NLP_Nitro package, with the exception of ComplexifierGUI and main. 25 total unit tests are provided, roughly 5 per class. Tests largely ensure that blank strings, non-words, and punctuation don't cause errors. They also check that various functions return output as expected. 
 
 *To run these unit tests, simply run the file*
+
+## Team
+
+[![Rebecca Iglesias-Flores](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/bikegirl)  | [![Trevor Wexner](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://github.com/wexnert)
+---|---
+[Rebecca Iglesias-Flores](https://github.com/bikegirl) |[Trevor Wexner](https://www.quandl.com)
+
+## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
+
+UPenn © [Rebecca Iglesias-Flores](https://github.com/bikegirl)
+UPenn © [Trevor Wexner](https://github.com/wexnert)
