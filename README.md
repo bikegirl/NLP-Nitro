@@ -1,6 +1,6 @@
 <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/icon.png" align="right" /> 
 
-# CIT591-NLP-Nitro
+# NLP Nitro
 Making your world more complex one token at a time...
 
 ### Introduction
