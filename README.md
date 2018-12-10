@@ -91,7 +91,7 @@ This is the main class prior to interacting with the GUI. TextComplexifier provi
 
 SpaCyParser is where all the *magic* starts to happen.  It takes in a content messaged passed from the TextComplexifier class and starts getting to work!  By default, spaCy will parse each token in a text and label it with a variety of categories including, but not limited to TEXT, LEMMA, POS, TAG, DEP, SHAPE, ALPHA, STOP, Dependency Parse, tokenization, Sentence Segmentation, and rules-based matching (to name a few).  In this class we solely deal with TEXT, POS, and TAG.  Once the universal tags are parsed into the text, we then do a conversion from spaCy's POS tag convention to DataMuses's POS tag convention so that we can properly query the API.
 
-A text is then parsed into two list of tuples (token and corresponding POS tag), and then enumerated to put all tokens of interest into it's own consolidated list that can be later traversed and searched with an integer key that corresponds to it's token placement with in the sentence.  This makes it uniquely suitable for lexical substitution once the complexity score is calculated.  It has 3 instance variables: __nlp english model from spaCy, tokens[] list, and tags[] list.
+A text is then parsed into two list of tuples (token and corresponding POS tag), and then enumerated to put all tokens of interest into it's own consolidated list that can be later traversed and searched with an integer key that corresponds to it's token placement with in the sentence.  This makes it uniquely suitable for lexical substitution once the complexity score is calculated.  It has 3 instance variables: __nlp (English model from spaCy), tokens (list), and tags (list).
 
 SpacyParser has one magical method called parse_and_tag_text() that receives a text, tokenizes, and returns api_tags, a list of tuples of (word, DataMuse_formatted_POS).
 
@@ -111,7 +111,7 @@ If you haven't felt the *magic* yet after SpaCyParser and WordSubstitutor, then 
 As previously mentioned, prior research has used nltk parser and PPDB to generate acceptable paraphrases for unigram, bigram, trigram lexical substitution and is widely used in NLP literature.  For this project, we decided to apply the principles of PPDB to an API as a our standard pool of wonderful tokens to cherry pick from in WordSubstitutor. 
 
 ### Word Class
-[quick access Word.py](
+[quick access Word.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/Word.py)
 
 Word class holds the properties of an English word. Specifically, for each word, the class stores the actual token (String), the corresponding POS, and frequency of use in the Google Ngram Books Corpus. Aside from its getters and setters, the only method for Word class is compute_complexity_score(), which returns a word's complexity score (or *e^(-frequency)*).
 
