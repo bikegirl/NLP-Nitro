@@ -1,0 +1,4 @@
+img[alt="minipic"] { 
+  max-width:  40px; 
+  display: block;
+}
