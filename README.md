@@ -42,13 +42,13 @@ Feel free to scroll to view whole diagram or download PDF by maximizing window [
 
 https://docs.google.com/viewer?url=${https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf}
 
-<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf" width="600" height="1000" />
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/UML.html" width="600" height="1000" />
 
 <div>
-    <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
+    <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/UML.html&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
 </div>
 
-![Model View Controller](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
+![Model View Controller](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/UML.html)
 
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
 
