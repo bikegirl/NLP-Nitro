@@ -82,10 +82,10 @@ WordSubstitutor has one method get_best_synonym() that takes in a Word object, l
 ### DataMuseQuierier
 [quick access DataMuseQuierier.py](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/DataMuseQuerier.py)
 
-If you haven't felt the *magic* after SpaCyParser and WordSubstitutor, then you will definietly feel the magic now with DataMuse.  As afore mentioned, previous research has used nltk parser and PPDB to generate acceptable paraphrases for lexical substitution and is widely used in NLP.  For this project, we decided to apply the principles of PPDB to an API where we search for better paraphrases synonyms in the API for our pool of wonderful lexical substitution worth tokens.  DataMuses's one instance variable is the actual API url and then returns the top 5 results with the highest complexity score ripe for the picking.
+If you haven't felt the *magic* yet after SpaCyParser and WordSubstitutor, then you'll definitely feel the magic now with DataMuseQuierier.  As afore mentioned, previous research has used nltk parser and PPDB to generate acceptable paraphrases for unigram, bigram, trigram lexical substitution and is widely used in NLP literature.  For this project, we decided to apply the principles of PPDB to an API as a our standard pool of wonderful lexically-worthy tokens to cherry pick from in WordSubstitutor.  DataMuses's one instance variable is the actual API url and then returns the top 5 results with the highest complexity score ripe for the picking.
 
 DataMuse Quierier has two methods: get_synonym_query_results() and get_frequency().
-- get_synonym_query_results() takes in an object of the class Word and return a list of the top 5 synonyms
+- get_synonym_query_results() takes in an object of the class Word and returns a list of the top 5 synonyms
 - get_frequency() returns a float (representing infinite frequency so value is always between 0-1) of one word.
 
 ### Word
