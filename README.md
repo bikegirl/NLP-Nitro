@@ -7,6 +7,8 @@ Our package, NLP_Nitro, provides software to automatically "complexify" any prov
 
 This problem of substituting simpler words for more complex synonyms was motivated because it is a common problem with practical applications for anyone wishing to write a non-redundant and professional expsosition.
 
+### Background
+
 Our project would not be possible without the contributions of NAACL paper [Simple PPDB Contextual Simplification](http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf).  As an extension to prior work completed by [Reno Kris](https://rekriz11.github.io/), NLP Nitro aims to implement this research paper backwards and transform any content message into a higher complexity score ("Shakespearify" any text, if you will).  
 
 Efforts in this research lead us down another path using an API DataMuse for better lexical substitutions for tokens in our text, but PPDB remained central to our cause and an inspiration to further growth in this project.  Whereas previous research in lexical substituion and simplification utilized nltk tokenizer and [PPDB](http://paraphrase.org/#/) for paraphrasing, our lexcial complexification model utilizes [DataMuse](https://www.datamuse.com/api/) a word finding query for engine developers, GUIbuilder library, and the [spaCy](https://spacy.io/) english model for tokenization and POS tagging.
