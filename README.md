@@ -3,7 +3,7 @@ Making your world more complex one token at a time...
 
 ### Introduction
 
-Our package, NLP_Nitro, provides software to automatically "complexify" any provided text. Specifically, this package includes a GUI that allows the user to type in any arbitrary English text. The GUI will then return a complexified version of the text, where all non-comparator adjectives, singular non-pronoun nouns, adverbs, and verbs are replaced by synonyms of similar meaning and higher complexity.
+Our package, NLP_Nitro, provides python-based software to automatically "complexify" any provided text. Specifically, this package includes a GUI that allows the user to type in any arbitrary English text. The GUI will then return a complexified version of the text, where all non-comparator adjectives, singular non-pronoun nouns, adverbs, and verbs are replaced by synonyms of similar meaning and higher complexity.
 
 This problem of substituting simpler words for more complex synonyms was motivated because it is a common problem with practical applications for anyone wishing to write a non-redundant and professional expsosition.
 
@@ -11,7 +11,7 @@ This problem of substituting simpler words for more complex synonyms was motivat
 
 Our project would not be possible without the contributions of NAACL paper [Simple PPDB Contextual Simplification](http://cis.upenn.edu/~ccb/publications/simple-ppdb.pdf).  As an extension to prior work completed by [Reno Kris](https://rekriz11.github.io/), NLP Nitro aims to implement this research paper backwards and transform any content message into a higher complexity score ("Shakespearify" any text, if you will).  
 
-Efforts in this research lead us down another path using an API DataMuse for better lexical substitutions for tokens in our text, but PPDB remained central to our cause and an inspiration to further growth in this project.  Whereas previous research in lexical substituion and simplification utilized nltk tokenizer and [PPDB](http://paraphrase.org/#/) for paraphrasing, our lexcial complexification model utilizes [DataMuse](https://www.datamuse.com/api/) a word finding query for engine developers, GUIbuilder library, and the [spaCy](https://spacy.io/) english model for tokenization and POS tagging.
+Efforts in this research lead us down another path using an API DataMuse for better lexical substitutions for tokens in our text, but PPDB remained central to our cause and an inspiration to further growth in this project.  Whereas previous research in lexical substituion and simplification utilized nltk tokenizer and [PPDB](http://paraphrase.org/#/) for paraphrasing, our lexcial complexification model utilizes [DataMuse](https://www.datamuse.com/api/) a word finding query for engine developers and the [spaCy](https://spacy.io/) english model for tokenization and POS tagging.
 
 ### Depedencies
 
@@ -36,7 +36,21 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 ### More Help
 > For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
 
-## NLP Nitro Project
+### Running The Program
+0. Make sure you have a Python (preferably 3) installed on your machine, have installed 'spacy' via the instructions above, and have a working internet connection.
+1. Run 'main.py'.
+2. Enter text for complexification as many times as you would like.
+
+## Implementation Details
+
+### Complexification Algorithm
+Our complexification algorithm is based largely off of the frequency with which a given word shows up in the Google NGram Book Corpus. Specifically, a word's complexity is definined to be $$e^{-frequency}$$. It is a well known fact in English that a word's complexity is inversely related to it's frequency. We chose to use the negative exponential, rather than $$\frac{1}{frequency}$$, since the negative exponential can handle zero frequencies. Given this complexity measure, our program complexifies text as follows:
+
+(1) Given some text passed by the user, parse the text into individual tokens and add a part of speech tag. (For our purposes, tokens were just single words and seperating punctuation. Multi-word tokens were not considered for simplicity.) 
+(2) For each token, if the token is a non-comparator adjective, adverb, singular non-pronoun noun, or verb, query the DataMuse API and return the 5 most similar synonyms (according to the DataMuse similarity score)
+(3) Find the synonym that has the highest complexity score that is the same part of speech and meets a minimum similarity score to the original word. If this synonym's complexity exceeds the original word's complexity, substitute the synonym.
+(4) Return the resulting set of text once all tokens have been considered for substitution.
+
 
 ### UML Diagram - a brief overview
 
