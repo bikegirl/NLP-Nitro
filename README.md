@@ -1,4 +1,5 @@
-<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="50" hieght="50"> # CIT591-NLP-Nitro 
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" width="75" hieght="75"> 
+# CIT591-NLP-Nitro 
 
 Making your world more complex one token at a time...
 
@@ -41,15 +42,9 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 Feel free to scroll to view whole diagram or download PDF by maximizing window [here](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
 
-
-{r label, out.width = "85%", fig.cap = "NLP Nitro!"}
-include_graphics(https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
-
-<object data="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+<div>
+    <iframe src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf&embedded=true" height="600" width="1000" allowfullscreen="" frameborder="0"></iframe>
+</div>
 
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
 
