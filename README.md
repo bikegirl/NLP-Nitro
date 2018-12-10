@@ -44,6 +44,12 @@ Feel free to scroll to view whole diagram or download PDF by maximizing window [
 {r label, out.width = "85%", fig.cap = "NLP Nitro!"}
 include_graphics(https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf)
 
+<object data="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro-UML.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 ![NLP Nitro UML](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/NLP-Nitro.png)
 
 ### Main
