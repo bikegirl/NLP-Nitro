@@ -1,4 +1,4 @@
-<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" align="left" width="50" hieght="50"> 
+<img src="https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png" align="left" width="60" hieght="60"> <img src="icon.png" align="right" /> 
 
 # CIT591-NLP-Nitro
 Making your world more complex one token at a time...
