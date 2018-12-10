@@ -1,4 +1,4 @@
-# CIT591-NLP-Nitro ![UPenn](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png "Coat of Arms")
+# CIT591-NLP-Nitro ![UPenn](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/shield-only-RGB-4k.png =100x20 "Coat of Arms")
 Making your world more complex one token at a time...
 
 ### Introduction
