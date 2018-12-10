@@ -40,13 +40,24 @@ Feel free to scroll to view whole diagram or download PDF by maximizing window [
 
 ### Main
 
-Client Program calls complexifier GUI interface for the user.
+This is not the main method.  File is called Main.py. ComplexifierGUI helper function the has a ComplexiferGUI object to call run GUI method.
 
 ### ComplexifierGUI Class
 
-Serves as a graphical user interface between the User and implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.  For all intents and purposes you can think of ComplexifierGUI Class as the main as well, (helper function to main), as main is called through the GUI or via GUI.
+Serves as a graphical user interface between the User in order to hide implementation details of the program.  The class has 2 instance variables: called __application_window that displays the title for the TextWidget and __text_complexifier which is a TextComplifier object.  For all intents and purposes you can think of ComplexifierGUI Class as codependent with main, (helper function of main), as main is called through the GUI or via GUI.
 
-Methods include __complexify_and_display_text and run_complexifier_GUI.  __complexify_and_display_text will display the output vector un by run_complexifier_GUI and run_complexifier GUI will return the output vector after processing to be displayed to the GUI.
+Methods include __complexify_and_display_text and run_complexifier_GUI.  
+-__complexify_and_display_text will display the output vector un by run_complexifier_GUI 
+- run_complexifier GUI will return the output vector after processing to be displayed to the GUI.
+
+### TextComplexifier Class
+
+This is the main method by all conventional standards.  Text complexifier is where the *magic* all begins by providing a method to take in a String (sequence of text) and returning a new piece of text.  Carefully selected parts of speech (nouns, verbs, adjectives, and adverbs) are substituted for more complicated synonyms based off a complexity score while preserving the meaning of the overall message.
+
+TextComplexifier Class takes in a SpaCyParser Object and a WordSubstitutor Object in order to access methods needed to complexify text.  TextComplexifier has two methods: __vec_to_string and complexify_text.
+- __vec_to_string helper method to convert a vector of strings and punctuation to one single string
+- complexify_text a method that takes in a text and returns a string with a higher complexity score while preserving the meaning.
+
 
 
 
