@@ -1,4 +1,4 @@
-# CIT591-NLP-Nitro
+# CIT591-NLP-Nitro ![alt text](https://secure.www.upenn.edu/webservices/logos/2016/shield-only-RGB-4k.png "Coat of Arms")
 Making your world more complex one token at a time...
 
 ### Introduction
