@@ -116,7 +116,7 @@ This class provides unit tests for all classes in the NLP_Nitro package, with th
 
 ## Team
 
-[![Rebecca Iglesias-Flores](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/headshotbecca.jpg)](https://github.com/bikegirl)  | [![Trevor Wexner](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/headshot.jpeg)](https://github.com/wexnert)
+[![Rebecca Iglesias-Flores](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/headshot2.jpg){:height="36px" width="36px"}](https://github.com/bikegirl)  | [![Trevor Wexner](https://github.com/bikegirl/CIT591-NLP-Nitro/blob/master/media/headshot.jpeg)](https://github.com/wexnert)
 ---|---
 [Rebecca Iglesias-Flores](https://github.com/bikegirl) |[Trevor Wexner](https://github.com/wexnert)
 
