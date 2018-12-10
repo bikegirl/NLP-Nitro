@@ -66,8 +66,11 @@ A text is then parsed into two list of touples (token and corresponding POS tag)
 
 SpacyParser has one magical method called parse_and_tag_text() that receives a text, tokenizes, and returns api_tags (a list of tuples) of the correct POS equivalents to DataMuse.
 
-
 ### WordSubstitutor
+
+WordSubstitutor Class works hand in hand with SpaCyParser class to give TextComplexifier class the best possible synonym selections of a higher complexity score to work with.  WordSubstitutor takes in a Word, provides a method to return the sentence with words of appropriate higher complexity.  It receives a DataMuseQuierer Object as an instance variable and only substitutes for verbs, non-comparator adjecticves, adverbs, and non-pronoun nouns.
+
+WordSubstitutor has one method get_best_synonym Takes in a Word object, looks at the top 5 synonyms according to DataMuse API, 0then returns the word with the most complex synonym. If the most complex word is the original, that word is returned.  If not, the higher complexity scored word is returned.
 
 
 
