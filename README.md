@@ -1,4 +1,4 @@
-# CIT591-NLP-Nitro ![alt text](https://secure.www.upenn.edu/webservices/logos/2016/shield-only-RGB-4k.png "Coat of Arms")
+# CIT591-NLP-Nitro ![UPenn](https://secure.www.upenn.edu/webservices/logos/2016/shield-only-RGB-4k.png "Coat of Arms")
 Making your world more complex one token at a time...
 
 ### Introduction
@@ -24,8 +24,8 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 2. Project interpreters in your IDE (i.e. - PyCharm, Spyder).  Ensure you cd to the working directory of your project in command line.  Once you've set the right directory in command line run "python" to ensure you are using python 2.6 or higher.  If it turns out you are not running the correct Python, you must download at this time.
 3. Path not found, file not found.  This means although you many have downloaded spaCy, you did not download it to the interpreter you thought you did.  You select correct python for your interpreter and then see (2) as reference.  Switch to working directly, verify which Python is being linked to the working directory, if not correct Python download accordingly. 
 4. Cannot fine module en or couldn't link model.  You must use a seperate command to download the English model, try these two versions because it depends on an individual basis how you set up your environment and where you set the pathway to your python download (whether default or you selected custom location):
-   - `nlp = spacy.load('en')` *_this is the full english model_*
-   - `nlp = spacy.load('en_core_web_sm')`*_this is the english mini-model_* 
+   - `nlp = spacy.load('en')` *_ this is the full english model _*
+   - `nlp = spacy.load('en_core_web_sm')`*_ this is the english mini-model _* 
 
 ### More Help
 > For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
