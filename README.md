@@ -52,11 +52,19 @@ Methods include __complexify_and_display_text and run_complexifier_GUI.
 
 ### TextComplexifier Class
 
-This is the main method by all conventional standards.  Text complexifier is where the *magic* all begins by providing a method to take in a String (sequence of text) and returning a new piece of text.  Carefully selected parts of speech (nouns, verbs, adjectives, and adverbs) are substituted for more complicated synonyms based off a complexity score while preserving the meaning of the overall message.
+This is the main method by all conventional standards.  At a high-fully encapsulated level TextComplexifier provides a method to take in a String (sequence of text) and returning a new piece of text, it depends directly upon the SpacyParser and WordSubstitutor Class for all the brains behind the work.  Carefully selected parts of speech (nouns, verbs, adjectives, and adverbs) are substituted for more complicated synonyms based off a complexity score while preserving the meaning of the overall message.
 
 TextComplexifier Class takes in a SpaCyParser Object and a WordSubstitutor Object in order to access methods needed to complexify text.  TextComplexifier has two methods: __vec_to_string and complexify_text.
 - __vec_to_string helper method to convert a vector of strings and punctuation to one single string
 - complexify_text a method that takes in a text and returns a string with a higher complexity score while preserving the meaning.
+
+### SpaCyParser
+
+SpaCyParser is where all the *magic* starts to happen.  It takes in a content messaged passed from the TextComplexifier class and starts getting to work!  By default, spaCy will parse each token in a text and label it with a variety of categories including, but not limited to TEXT, LEMMA, POS, TAG, DEP, SHAPE, ALPHA, STOP, Dependency Parse, tokenization, Sentence Segmentation, and rules-based matching (to name a few).  In this class we solely deal with TEXT, POS, and TAG.  Once the universal tags are parsed into the text, we then do a comparison with DataMuses's POS tag convention so that we can select higher scoring synonyms and match them up with the POS tag that DataMuse Provides.
+
+A text is then parsed into two list of touples (token and corresponding POS tag), and then enumerated to put all tokens of interest into it's own consolidated list that can be later traversed and searched with an integer key that corresponds to it's token placement with in the sentence.  This makes is uniquely suitable for lexical substitution once the complexity score is calculated.
+
+### WordSubstitutor
 
 
 
