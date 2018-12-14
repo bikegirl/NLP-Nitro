@@ -34,6 +34,7 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 4. Cannot fine module en or couldn't link model.  You must use a seperate command to download the English model, try these two versions because it depends on an individual basis how you set up your environment and where you set the pathway to your python download (whether default or you selected custom location):
    - `nlp = spacy.load('en')` *_ this is the full english model _*
    - `nlp = spacy.load('en_core_web_sm')`*_ this is the english mini-model _* 
+5. pip install fail.  pip3 install spaCy, pip install spaCy, and also last option is Conda install spaCy.   
 
 ### More Help
 > For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
