@@ -34,6 +34,7 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 4. Cannot fine module en or couldn't link model.  You must use a seperate command to download the English model, try these two versions because it depends on an individual basis how you set up your environment and where you set the pathway to your python download (whether default or you selected custom location):
    - `nlp = spacy.load('en')` *_ this is the full english model _*
    - `nlp = spacy.load('en_core_web_sm')`*_ this is the english mini-model _* 
+   - This is where you will need the && `python -m spacy download en` 
 5. pip install fail.  pip3 install spaCy, pip install spaCy, and also last option is Conda install spaCy.   
    - `pip3 install spaCy`
    - `pip install spaCy` 
@@ -44,9 +45,10 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 ### Running The Program
 0. Make sure you have a Python (preferably 3) installed on your machine, have installed 'spacy' via the instructions above, and have a working internet connection.
-1. Run 'main.py'.
-2. Enter text for complexification as many times as you would like.
-3. (Optional) Run Unit tests. You can do this before step 1 or at any point, to make sure things are functioning properly. Simply run the "TestMethods.py" file.
+1. Add the zipped context on this repo to a local folder.  `cd` into your working directory
+2. Run 'main.py'.
+3. Enter text for complexification as many times as you would like.
+4. (Optional) Run Unit tests. You can do this before step 1 or at any point, to make sure things are functioning properly. Simply run the "TestMethods.py" file.
 
 ## Implementation Details
 
