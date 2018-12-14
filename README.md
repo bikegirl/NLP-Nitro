@@ -37,7 +37,7 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 5. pip install fail.  pip3 install spaCy, pip install spaCy, and also last option is Conda install spaCy.   
    - `pip3 install spaCy`
    - `pip install spaCy` 
-   - `pip install spaCy`
+   - `conda install spaCy` //sometimes pip will not work and you need to use conda
 
 ### More Help
 > For more help on downloading spaCy you can use [this GitHub repository](https://github.com/explosion/spaCy/issues/1721) for detailed documentation on how to deal with different issues.
