@@ -45,7 +45,7 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 
 ### Running The Program
 0. Make sure you have a Python (preferably 3) installed on your machine, have installed 'spacy' via the instructions above, and have a working internet connection.
-1. Add the zipped context on this repo to a local folder.  `cd` into your working directory
+1. Add the zipped folder on this repo above to a local folder.  `cd` into your working directory
 2. Run 'main.py'.
 3. Enter text for complexification as many times as you would like.
 4. (Optional) Run Unit tests. You can do this before step 1 or at any point, to make sure things are functioning properly. Simply run the "TestMethods.py" file.
