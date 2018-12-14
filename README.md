@@ -48,7 +48,7 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 1. Add the zipped contents on this repo above to a local folder.  `cd` into your working directory
 2. Run `main.py` in command line... that's it!  The GUI should pop up!
 3. Enter text for complexification as many times as you would like.
-   - We'll get you started.  Try these:
+   - We'll get you started.  Try some of these very entertaining utterances:
    
       > "Kid's run in a playground."
       
