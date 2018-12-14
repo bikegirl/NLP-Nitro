@@ -49,10 +49,10 @@ Efforts in this research lead us down another path using an API DataMuse for bet
 2. Run `main.py` in command line... that's it!  The GUI should pop up!
 3. Enter text for complexification as many times as you would like.
    - We'll get you started.  Try these:
-      > "Kid's run in a playground."
-      > "I think therefore I am."
-      > "Wow you threw that ball very far!"
-      > "I ate a delicious ham sandwhich with cheese for lunch mm-mmm!"
+      > Kid's run in a playground.
+      > I think therefore I am.
+      > Wow you threw that ball very far!
+      > I ate a delicious ham sandwhich with cheese for lunch mm-mmm!
 4. (Optional) Run Unit tests. You can do this before step 1 or at any point, to make sure things are functioning properly. Simply run the `TestMethods.py` file in command line.
 
 ## Implementation Details
